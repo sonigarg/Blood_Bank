@@ -17,7 +17,7 @@
 
 ### Note on Issues
 
-For any bugs or errors in the project reach out to me on shyamchadha34@gmail.com
+For any bugs or errors in the project reach out to me on sonigarg242@gmail.com
 
 ### Usage
 Bridge between donor and reciever.
