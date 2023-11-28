@@ -1,0 +1,26 @@
+<%- include('partials/Loginheader') %> <% if(arr.length==0){ %>
+<div>
+  <p>Me and the boys looking at 0 donors. Please try again later.</p>
+</div>
+<%} else { %>
+<div class="all_donors">
+  <% arr.forEach(function(inarr) { %>
+  <div class="donor card">
+    <h5 class="card-title">Name: <%= inarr.user.username%></h5>
+      <h6 class="card-subtitle mb-3 text-muted"><%= inarr.user.pincode%>, <%= inarr.user.state%></h6>
+      
+      <ul class="list-group list-group-flush">
+        <li class="card-title">Blood Group: <%= inarr.user.blood_group%></li>
+      <li class="list-group-item">Diseases: <%=inarr.disease%></li>
+      <li class="list-group-item">Other Disease: <%=inarr.otherdisease%></li>
+      <li class="list-group-item">Age Group: <%=inarr.age%></li>
+    </ul>
+
+    <a class="card-footer text-muted" href="tel:<%= inarr.user.phone %>"
+      >Call me! <i class="fas fa-phone"></i
+    ></a>
+    <a>Delete</a>
+  </div>
+  <% })}; %>
+</div>
+<%- include('partials/footer') %>

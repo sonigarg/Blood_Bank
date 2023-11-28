@@ -1,0 +1,141 @@
+<%- include('partials/Loginheader') %>
+
+  <main>
+    <div>
+      <h1 class="heading">WHY IT IS IMPORTANT TO CHECK WHETHER YOU ARE ELIGIBLE FOR DONATING YOUR BLOOD OR NOT</h1>
+      <p>WE ARE HERE TO CHECK YOU FROM EVERRY ASPECT.FILL THE ACCORDINGLY AND GIVE CORRECT DETAILS </p>
+      <p>
+        To donate blood you will need to:
+      <ul>
+        <li>be generally fit and well</li>
+        <li>be aged between 17 and 65</li>
+        <li>weigh between 7 stone 12 lbs (50kg) and 25 stone (158kg)</li>
+        <li>have suitable veins (we will check these before you donate)</li>
+        <li>meet all donor eligibility criteria (we will check this with you before you donate)</li>
+      </ul>
+
+      <h1 class="heading"> Who can't donate blood</h1>
+      <h3>You can't donate blood if you:</h3>
+      </p>
+      <ul>
+        <li>have had most types of cancer</li>
+        <li>have some heart conditions</li>
+        <li>have received blood, platelets, plasma or any other blood products after 1 January 1980</li>
+        <li>have tested positive for HIV</li>
+        <li>have had an organ transplant</li>
+        <li>are a hepatitis B carrier</li>
+        <li>are a hepatitis C carrier</li>
+        <li>have injected non-prescribed drugs including body-building and injectable tanning agents. You may be able to
+          give
+          if a doctor prescribed the drugs</li>
+        <li>There are other medical conditions that may mean you can't donate.</li>
+      </ul>
+      </p>
+      <section>
+        <h1 class="font-weight-bold heading">ARE YOU ELIGIBLE ??? CHECK NOW</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <form action="/eligibility" method="POST" class="elegibility_form">
+              <div>
+                <div class="col-md-6 pt-4">
+                  <select name="DISEASES" class="form-control" required>
+                    <option value="">DISEASES</option>
+                    <option value="CANCER">CANCER</option>
+                    <option value="DIABITIES">DIABITIES</option>
+                    <option value="HIGH BLOOD PRESSURE">HIGH BLOOD PRESSURE</option>
+                    <option value="LOW BLOOD PRESSURE">LOW BLOOD PRESSURE</option>
+                    <option value="ASTHMA">ASTHMA</option>
+                    <option value="CARDIOVASCULAR DISEASE">CARDIOVASCULAR DISEASE</option>
+                    <option value="PANIC ATTACKS">PANIC ATTACKS</option>
+                    <option value="OTHER PLEASE SPECIFY">OTHER PLEASE SPECIFY</option>
+                    <option value="NONE">NONE</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 pt-4">
+                <div>
+                  <input type="text" name="OTHER_DISEASE" class="form-control" placeholder="OTHER DISEASE." />
+                </div>
+              </div>
+              <div>
+                <div class="col-md-6 pt-4">
+                  <select name="TATOO" class="form-control" required>
+                    <option value="">TATOO</option>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <div class="col-md-6 pt-4">
+                  <select name="AGE_GROUP" class="form-control" required>
+                    <option value="">AGE GROUP</option>
+                    <option value="ABOVE 18">ABOVE 18</option>
+                    <option value="ABOVE 30">ABOVE 30</option>
+                    <option value="ABOVE 45">ABOVE 45</option>
+                    <option value="ABOVE 60">ABOVE 60</option>
+                    <option value="ABOVE 70">ABOVE 70</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <div class="col-md-6 pt-4">
+                  <select name="DRINKING" class="form-control" required>
+                    <option value="">DRINKING</option>
+                    <option value="REGULARLY">REGULARLY</option>
+                    <option value="RARELY">RARELY</option>
+                    <option value="NEVER">NEVER</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <div class="col-md-6 pt-4">
+                  <select name="SMOKING" class="form-control" required>
+                    <option value="">SMOKING</option>
+                    <option value="REGULARLY">REGULARLY</option>
+                    <option value="RARELY">RARELY</option>
+                    <option value="NEVER">NEVER</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <div class="col-md-6 pt-4">
+                  <select name="DONATED_BEFORE" class="form-control" required>
+                    <option value="">DONATED BEFORE</option>
+                    <option value="YES">YES</option>
+                    <option value="NO">NO</option>
+                  </select>
+                </div>
+              </div>             
+                <div class="col-md-6 pt-4">
+                  <select name="VACCINATED" class="form-control" required>
+                    <option value="">VACCINATED</option>
+                    <option value="YES (BOTH DOSE)">YES (BOTH DOSE)</option>
+                    <option value="SINGLE DOSE">SINGLE DOSE</option>
+                    <option value="NO">NO</option>
+                  </select>
+                </div>  
+                <div>
+                  <div class="col-md-6 pt-4">
+                    <select name="AVAILABILITY" class="form-control" required>
+                      <option value="">AVAILABILITY</option>
+                      <option value="YES">YES</option>
+                      <option value="NO">NO</option>
+                    </select>
+                  </div>
+                </div>                 
+              <div class="pt-4 pb-4">
+              <button class="btn btn-info" type="submit">
+                SUBMIT
+                <i class="fa fa-paper-plane"></i>
+              </button>
+              <button class="btn btn-info" type="reset">
+                Reset
+                <i class="fa fa-times"></i>
+              </button>
+            </div>
+            </form>
+          </div>
+      </section>
+  </main>
+  <%- include('partials/footer') %>

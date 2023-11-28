@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+    <br>
+    <h1 class="font-weight-bold">Login</h1>
+    <div class="row login_form">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-body">
+            <form action="/login" method="POST">
+              <div>
+                <label for="name">Userame</label>
+                <input type="text" class="form-control" name="username" required>
+              </div>
+              <div>
+                <label for="phone">Password</label>
+                <input type="password" class="form-control" name="password" required>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-info">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<%- include('partials/footer') %>
